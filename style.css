@@ -1,0 +1,101 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000033; /* Fundo azul escuro */
+    color: white;
+}
+
+/* Cabeçalho */
+header {
+    background: #0066FF; /* Azul claro neon */
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #00FFFF; /* Título azul claro neon */
+}
+
+/* Logo */
+.logo img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #00FFFF; /* Contorno neon azul */
+}
+
+/* Seção dos Botões abaixo do logo */
+#botoes-header {
+    background: #0066FF; /* Azul claro neon */
+    padding: 20px 0;
+}
+
+.botoes-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaço entre os botões */
+    margin-top: 20px;
+}
+
+.botoes-container a {
+    text-decoration: none;
+}
+
+.botao {
+    background-color: #00FFFF; /* Cor do botão azul neon */
+    color: #000033;
+    border: none;
+    padding: 8px 15px; /* Ajuste para botões menores */
+    font-size: 14px; /* Texto menor */
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00FFFF; /* Efeito de contorno neon */
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase; /* Tornar texto maiúsculo */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+.botao:hover {
+    background-color: #000033; /* Cor ao passar o mouse */
+    color: #00FFFF;
+    box-shadow: 0 0 20px #00FFFF;
+}
+
+/* Seção Principal (Home) */
+#home {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Seção de "O que é E-book" */
+#o-que-e-ebook {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#o-que-e-ebook h2, #o-que-e-ebook h3 {
+    color: #00FFFF;
+    text-align: center;
+}
+
+/* Adicionando espaçamento e estilo para o texto */
+#o-que-e-ebook p {
+    color: #CCCCCC;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px 20px; /* Rodapé menor */
+    background: #000000; /* Fundo preto */
+    color: #FFFFFF;
+    font-size: 14px;
+}

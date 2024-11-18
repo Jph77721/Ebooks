@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000033; /* Fundo azul escuro */
+    color: white;
+}
+
+header {
+    background: #0066FF; /* Azul claro neon */
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #00FFFF; /* Título azul claro neon */
+}
+
+.logo img {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #00FFFF; /* Contorno neon azul */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#home {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#produtos {
+    text-align: center;
+    margin-top: 0; /* Remove o espaço superior extra */
+    padding-top: 0; /* Remove o padding superior da seção */
+}
+
+#produtos h2 {
+    background: #00FFFF; /* Fundo liso azul neon */
+    color: #000033; /* Cor do texto escura para contraste */
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #00FFFF; /* Efeito de contorno neon */
+    margin-top: -10px; /* Movendo o título mais para cima */
+    margin-bottom: 0; /* Remove o espaço abaixo do título */
+}
+
+.produtos-grid {
+    display: flex;
+    flex-direction: column; /* Organiza os produtos verticalmente */
+    gap: 30px; /* Espaço entre os produtos */
+    padding: 20px;
+    align-items: center; /* Centraliza os produtos horizontalmente */
+}
+
+.produto {
+    background: #001A66; /* Fundo azul escuro para os produtos */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px #00FFFF; /* Contorno neon para os produtos */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos dentro do produto de forma vertical */
+    align-items: center; /* Centraliza o conteúdo dentro do produto */
+    justify-content: flex-start; /* Organiza os itens no topo */
+    width: 100%;
+    max-width: 350px; /* Define a largura máxima dos produtos */
+}
+
+.produto img {
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    max-height: 250px; /* Limita a altura máxima da imagem */
+    object-fit: contain; /* Garante que a imagem fique ajustada sem cortar ou distorcer */
+    border-radius: 5px;
+    margin-bottom: 15px; /* Espaço entre a imagem e o restante do conteúdo */
+}
+
+.produto h3 {
+    color: #00FFFF; /* Texto azul claro neon */
+    font-size: 1.6rem; /* Aumenta o tamanho do nome do produto */
+    margin-bottom: 10px; /* Espaço abaixo do nome do produto */
+}
+
+.produto span {
+    color: #00FFFF; /* Texto azul claro neon */
+    font-size: 1.4rem; /* Aumenta o tamanho do preço */
+    margin-bottom: 10px; /* Espaço abaixo do preço */
+}
+
+/* Estilo para os botões */
+.botao {
+    background-color: #00FFFF; /* Cor do botão azul neon */
+    color: #000033;
+    border: none;
+    padding: 8px 15px; /* Botão menor */
+    font-size: 12px; /* Texto menor */
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00FFFF; /* Efeito de contorno neon */
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; /* Alinha o texto ao centro do botão */
+    text-transform: uppercase; /* Tornar texto maiúsculo */
+    margin-bottom: 10px; /* Espaço abaixo do botão */
+}
+
+.botao:hover {
+    background-color: #000033; /* Cor ao passar o mouse */
+    color: #00FFFF;
+    box-shadow: 0 0 20px #00FFFF;
+}
+
+/* Botão de "Comprar" Largo */
+.botao.comprar-largo {
+    background-color: #00FFFF; /* Azul neon */
+    color: #000033;
+    border: none;
+    padding: 15px 40px; /* Botão largo */
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00FFFF;
+    display: inline-block;
+    width: 100%; /* Faz o botão ocupar a largura total */
+    margin: 10px 0; /* Espaçamento superior e inferior */
+    text-align: center;
+    text-transform: uppercase; /* Texto maiúsculo */
+}
+
+.botao.comprar-largo:hover {
+    background-color: #000033;
+    color: #00FFFF;
+    box-shadow: 0 0 30px #00FFFF;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px; /* Rodapé menor */
+    background: #000000; /* Fundo preto */
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+/* Botões para Início, E-books e O que é E-book */
+.botoes-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 30px; /* Movendo os botões mais para baixo */
+}
+
+.botoes-container a {
+    text-decoration: none;
+}
+
+/* Ajustando a centralização dos botões nas seções de produtos */
+.produto .botao, .produto .botao.comprar-largo {
+    width: 100%; /* Faz os botões ocuparem a largura total da coluna */
+    display: inline-block;
+    margin: 10px 0; /* Espaçamento entre os botões */
+}
